@@ -13,16 +13,16 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: frontend-a-svc
+                name: bytebank-frontend-a-svc
                 port:
                   number: 3000
-          # - path: /frontend-b
-          #   pathType: Prefix
-          #   backend:
-          #     service:
-          #       name: frontend-b-svc
-          #       port:
-          #         number: 3000
+          - path: /frontend-b
+            pathType: Prefix
+            backend:
+              service:
+                name: bytebank-investments-frontend-b-svc
+                port:
+                  number: 3000
           # - path: /api
           #   pathType: Prefix
           #   backend:

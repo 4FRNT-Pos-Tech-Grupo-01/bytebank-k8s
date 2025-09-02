@@ -1,10 +1,11 @@
 # Create local cluster (optional)
 
-`kind create cluster --name bytebank`
+`kind create cluster --name bytebankcluster`
 
 # Load image into kind (optional)
 
-`kind load docker-image bytebank:latest --name bytebank`
+`kind load docker-image bytebank:latest --name bytebankcluster`
+`kind load docker-image bytebank-investments:latest --name bytebankcluster`
 
 # Apply manifests
 
@@ -19,5 +20,6 @@
 
 # Force port foward (optional)
 
-`kubectl port-forward svc/frontend-a-svc 3001:3000`
+`kubectl port-forward svc/bytebank-frontend-a-svc 3000:3000`
+`kubectl port-forward svc/bytebank-investments-frontend-b-svc 3001:3000`
 
