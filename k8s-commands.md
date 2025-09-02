@@ -6,6 +6,7 @@
 
 `kind load docker-image bytebank:latest --name bytebankcluster`
 `kind load docker-image bytebank-investments:latest --name bytebankcluster`
+`kind load docker-image bytebank-api:latest --name bytebankcluster`
 
 # Apply manifests
 
@@ -22,4 +23,5 @@
 
 `kubectl port-forward svc/bytebank-frontend-a-svc 3000:3000`
 `kubectl port-forward svc/bytebank-investments-frontend-b-svc 3001:3000`
+`kubectl port-forward svc/bytebank-api-svc 3001:3000`
 
