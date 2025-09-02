@@ -25,3 +25,7 @@
 `docker run -p 3000:3000 bytebank:latest`
 `docker run -p 3001:3000 bytebank-investments:latest`
 `docker run -p 3002:3000 bytebank-api:latest`
+
+### Docker compose
+
+`docker compose up -d`
